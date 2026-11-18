@@ -1,223 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kavin Arvinth Ravichandran — robotics researcher working on robot learning, embodied AI, and autonomous systems.">
+  <meta name="description" content="Kavin Arvinth Ravichandran — robotics, robot learning and embodied AI.">
   <title>Kavin Arvinth Ravichandran</title>
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  <main class="page">
-    <header class="intro">
-      <div class="intro-copy">
-        <h1>Kavin Arvinth Ravichandran</h1>
-        <p class="subtitle">Robotics · Robot Learning · Embodied AI</p>
-        <p>
-          I am an engineering student at the <a href="https://www.iitm.ac.in/">Indian Institute of Technology Madras</a>,
-          pursuing an integrated B.Tech in Aerospace Engineering and M.Tech in Robotics. My work explores
-          learning-based approaches to intelligent robotic systems, with an emphasis on manipulation,
-          autonomy, and coordination.
-        </p>
-        <p>
-          I am interested in building robots that can understand their environments, learn new
-          skills, and operate reliably alongside people. My current interests include vision-language-action
-          models, robot foundation models, world models, few-shot learning, and multi-robot systems.
-        </p>
-        <nav class="links" aria-label="Profile links">
-          <a href="https://github.com/Redsapphire15">GitHub</a>
-          <span>LinkedIn profile to be added</span>
-          <span>Google Scholar profile to be added</span>
-          <span>CV to be added</span>
-        </nav>
-      </div>
-      <div class="portrait">
-        <img src="https://avatars.githubusercontent.com/u/147643584?v=4" alt="GitHub profile avatar">
-      </div>
-    </header>
-
-    <section>
-      <h2>Publications</h2>
-      <ol class="publications">
-        <li><strong>FUSEDnet: Fast Underwater Super-resolution and Enhancement Distillation Network.</strong> IEEE OCEANS 2026, Sanya, China. Published; second author.</li>
-        <li>Vision-Based Relative Tracking of Marine Vessels Using Superstructure Features.</li>
-        <li>RL-based RLV re-entry trajectory optimization.</li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Research interests</h2>
+<main class="page">
+  <header class="bio">
+    <div class="bio-text">
+      <h1>Kavin Arvinth Ravichandran</h1>
+      <p class="affiliation">Indian Institute of Technology Madras · Aerospace Engineering and Robotics</p>
       <p>
-        Robot learning and foundation models · Vision-language-action models · Bimanual manipulation
-        and handover · Embodied intelligence and world models · Multi-robot coordination ·
-        Autonomous aerial systems.
+        I am an undergraduate dual-degree student at <a href="https://www.iitm.ac.in/">IIT Madras</a>,
+        working on robotics, robot learning, and embodied AI. My current research interests lie in
+        learning-based manipulation, vision-language-action models, multi-robot coordination, and
+        reliable autonomy.
       </p>
-    </section>
+      <p>
+        I am interested in how robots can acquire useful skills from data, reason about tasks and
+        environments, and coordinate safely with people and other robots. My work spans robot
+        learning and manipulation, perception and state estimation, motion planning, and autonomous
+        aerial and mobile systems.
+      </p>
+      <p class="bio-links">
+        <a href="CV.pdf">CV</a> &nbsp;/&nbsp;
+        <a href="https://github.com/Redsapphire15">GitHub</a> &nbsp;/&nbsp;
+        <a href="https://www.linkedin.com/in/kavin-arvinth-ravichandran-b06267b4/">LinkedIn</a>
+      </p>
+    </div>
+    <div class="bio-photo">
+      <img src="https://avatars.githubusercontent.com/u/147643584?v=4" alt="Profile photograph">
+    </div>
+  </header>
 
-    <section>
-      <h2>Selected projects</h2>
-      <p class="section-note">A selection of research and engineering projects. Project media, papers, and code links will be added as they are made public.</p>
+  <section class="section-header">
+    <h2>Research interests</h2>
+    <p>Robot learning and embodied AI · Vision-language-action models · Dexterous and bimanual manipulation ·
+       Robot foundation models and world models · Multi-robot coordination · Autonomous systems.</p>
+  </section>
 
-      <article class="project">
-        <div class="project-figure media-figure">
-          <img src="assets/images/bimanual-coordination.png" alt="Bimanual robot arms performing an object handover in simulation">
-        </div>
-        <div class="project-copy">
-          <h3>Decoupling Dexterity and Coordination for Bimanual Manipulation</h3>
-          <p class="meta">Bimanual robotics · VLM-based task allocation · Handover</p>
-          <p>
-            Studying how two robot arms can coordinate manipulation while keeping individual
-            dexterous skills modular. The simulation system combines semantic task allocation,
-            local manipulation skills, collision-aware coordination, and grasp selection for
-            object handover. The longer-term goal is to investigate few-shot transfer of
-            coordination strategies across robotic platforms.
-          </p>
-          <p class="project-links"><span>Code / paper: coming soon</span></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-figure figure-vla" role="img" aria-label="Illustration of a camera, language instruction, and robot action pipeline">
-          <div class="pipeline"><span>Vision</span><b>→</b><span>Language</span><b>→</b><span>Action</span></div>
-          <div class="figure-label">Learning for manipulation</div>
-        </div>
-        <div class="project-copy">
-          <h3>Vision-Language-Action Learning for Robotic Manipulation</h3>
-          <p class="meta">VLA models · LeRobot · MuJoCo</p>
-          <p>
-            Developing a simulated manipulation pipeline for a Doosan robot arm, exploring
-            vision-language-conditioned task understanding alongside conventional low-level
-            controllers. The work includes dataset generation, wrist-camera observations,
-            and evaluation of learned pickup behaviours.
-          </p>
-          <div class="project-media">
-            <video controls preload="metadata" playsinline>
-              <source src="assets/videos/single-arm-vla-web.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <p class="media-caption">Single-arm Doosan VLA pickup-learning demonstration.</p>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-figure figure-drone" role="img" aria-label="Illustration of a drone approaching a moving ship landing platform">
-          <div class="horizon"></div><div class="ship"></div><div class="drone">✦</div>
-          <div class="figure-label">Autonomous landing on a moving ship</div>
-        </div>
-        <div class="project-copy">
-          <h3>Vision-Based Autonomous Landing on a Moving Ship</h3>
-          <p class="meta">Aerial robotics · Visual tracking · Relative localisation</p>
-          <p>
-            Developed an autonomous landing approach for a drone targeting a moving ship without
-            relying on GPS, fiducial markers, or pre-built maps. The system uses onboard visual
-            tracking and relative localisation from ship features. Across more than 200 trials,
-            the reported average landing error was approximately 0.7 m.
-          </p>
-          <p class="project-links"><span>Publication: submitted</span></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-figure media-figure">
-          <img src="assets/images/critical-agent-results.png" alt="Critical-agent identification evaluation plots and ranking results">
-        </div>
-        <div class="project-copy">
-          <h3>Critical-Agent Identification in Aerial Swarms</h3>
-          <p class="meta">Graph neural networks · Attention · Temporal modelling</p>
-          <p>
-            Built a graph-learning model to identify agents whose removal could significantly
-            affect swarm performance. The architecture combines GraphSAGE, edge-aware attention,
-            global environmental context, and recurrent temporal modelling to estimate agent
-            criticality and future criticality.
-          </p>
-          <p class="project-links"><span>Code: coming soon</span></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-figure figure-diffusion" role="img" aria-label="Illustration of multiple candidate robot motion trajectories">
-          <svg viewBox="0 0 320 170" aria-hidden="true">
-            <path d="M22 135 C75 130 75 30 145 55 S220 145 298 28" />
-            <path d="M22 135 C80 120 100 75 145 80 S220 105 298 28" />
-            <path d="M22 135 C75 155 115 20 170 60 S230 90 298 28" />
-            <path d="M22 135 C95 105 105 110 165 95 S240 65 298 28" />
-            <circle cx="22" cy="135" r="6"/><circle cx="298" cy="28" r="6"/>
-          </svg>
-          <div class="figure-label">Generative motion planning</div>
-        </div>
-        <div class="project-copy">
-          <h3>Diffusion Models for Robot Motion Planning</h3>
-          <p class="meta">Diffusion models · Trajectory generation</p>
-          <p>
-            Explored conditional diffusion with a 1D U-Net for robot trajectory generation.
-            Generated more than 3,000 trajectories using cuMotion and compared the diffusion
-            approach against Transformer and MLP baselines.
-          </p>
-          <p class="project-links"><span>Code / results: coming soon</span></p>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-figure figure-multi" role="img" aria-label="Illustration of multiple mobile robots coordinating in a warehouse">
-          <div class="warehouse-grid"></div><span class="bot bot-a"></span><span class="bot bot-b"></span><span class="bot bot-c"></span>
-          <div class="figure-label">Multi-robot task allocation</div>
-        </div>
-        <div class="project-copy">
-          <h3>Multi-Robot Task Allocation in Warehouse Environments</h3>
-          <p class="meta">Multi-agent reinforcement learning · ROS · Gazebo</p>
-          <p>
-            Developed a TD3-based task-allocation system for warehouse robots, evaluated with
-            up to 50 TurtleBot agents in Gazebo. The system incorporated mapping and navigation
-            components and achieved approximately 84% task success over 100 evaluation runs.
-          </p>
-          <p class="project-links"><span>Code: coming soon</span></p>
-        </div>
-      </article>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <div class="entry">
-        <div><h3>TCS Research</h3><p class="meta">Robotics Research Intern · May – July 2025</p></div>
-        <p>Worked on robot motion planning and control using NVIDIA Isaac ROS cuMotion, MoveIt 2 Servo, and Hybrid Planning, including deployment on a UR5 platform.</p>
+  <section class="section-header">
+    <h2>Publications</h2>
+  </section>
+  <section class="papers">
+    <article class="paper">
+      <div class="paper-media"><div class="thumb"><img src="assets/images/critical-agent-results.png" alt="Research results figure"></div></div>
+      <div class="paper-info">
+        <div class="papertitle">FUSEDnet: Fast Underwater Super-resolution and Enhancement Distillation Network</div>
+        <div class="paper-authors"><strong>Kavin Arvinth Ravichandran</strong> (second author)</div>
+        <div class="paper-venue"><em>IEEE OCEANS 2026</em>, Sanya, China · Published</div>
       </div>
-      <div class="entry">
-        <div><h3>Autosky AI</h3><p class="meta">AI Controls Intern · March – May 2026</p></div>
-        <p>Developed and benchmarked reinforcement-learning controllers for a reusable launch vehicle re-entry and descent problem, including PPO, TD3, DDPG, and recurrent DDPG variants.</p>
+    </article>
+    <article class="paper">
+      <div class="paper-media"><div class="thumb text-thumb">MARINE<br>PERCEPTION</div></div>
+      <div class="paper-info">
+        <div class="papertitle">Vision-Based Relative Tracking of Marine Vessels Using Superstructure Features</div>
       </div>
-      <div class="entry">
-        <div><h3>Indian Institute of Science (IISc)</h3><p class="meta">AI Robotics Lab Intern · December 2024 – January 2025</p>
-          <div class="project-media experience-video">
-            <video controls preload="metadata" playsinline>
-              <source src="assets/videos/iisc-internship-web.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <p class="media-caption">IISc AI Robotics Lab internship demonstration.</p>
-          </div>
-        </div>
-        <p>Worked on visual relocalisation, LiDAR-camera calibration, and neural scene representation methods including Gaussian Splatting and Instant-NeRF.</p>
+    </article>
+  </section>
+
+  <section class="section-header">
+    <h2>Selected research</h2>
+    <p>Research projects across robot learning, manipulation, perception, planning, and multi-agent autonomy.</p>
+  </section>
+  <section class="papers">
+    <article class="paper">
+      <div class="paper-media"><div class="thumb"><img src="assets/images/bimanual-coordination.png" alt="Doosan and Franka robot arms performing a handover"></div></div>
+      <div class="paper-info">
+        <div class="papertitle">Decoupling Dexterity and Coordination for Bimanual Manipulation</div>
+        <div class="paper-venue">Dual-degree thesis · Doosan and Franka · MuJoCo</div>
+        <p class="paper-desc">Developing a hierarchical bimanual manipulation architecture that separates local arm skills from semantic coordination. A vision-language task allocator assigns semantic phases using task instructions, arm states, and wrist-camera observations. The coordination layer investigates collision-aware synchronization, handover decisions, and transfer across arm configurations.</p>
       </div>
-    </section>
+    </article>
 
-    <section>
-      <h2>Leadership</h2>
-      <div class="entry">
-        <div><h3>Team Anveshak, IIT Madras</h3><p class="meta">Software Engineer → Head of Operations</p></div>
-        <p>Led a 63-member multidisciplinary Mars rover team. Helped guide technical execution and team operations across rover development and international robotics competitions. The team was recognised as Best Competition Team at CFI, IIT Madras, for 2025–26.</p>
+    <article class="paper">
+      <div class="paper-media"><div class="thumb video-thumb">
+        <video controls playsinline preload="metadata">
+          <source src="assets/videos/single-arm-vla-web.mp4" type="video/mp4">
+        </video>
+      </div></div>
+      <div class="paper-info">
+        <div class="papertitle">VLA Policy Training for Doosan Manipulation</div>
+        <div class="paper-venue">SmolVLA · LeRobot · MuJoCo · 2026</div>
+        <p class="paper-desc">Built a simulated Doosan A0509 pickup-learning pipeline with scripted-oracle data generation, object-state tracking, and wrist-camera observations. Curated 150 episodes (52.7K frames at 20 FPS) and trained and evaluated SmolVLA checkpoints at 20K and 40K steps.</p>
       </div>
-    </section>
+    </article>
 
-    <section>
-      <h2>Technical areas</h2>
-      <p><strong>Robotics:</strong> ROS 2, MoveIt 2, MuJoCo, Gazebo, Isaac ROS, cuMotion, PX4</p>
-      <p><strong>Learning:</strong> PyTorch, reinforcement learning, graph neural networks, diffusion models, vision-language models</p>
-      <p><strong>Programming:</strong> Python, C++, Linux</p>
-    </section>
+    <article class="paper">
+      <div class="paper-media"><div class="thumb video-thumb">
+        <video controls playsinline preload="metadata">
+          <source src="assets/videos/iisc-internship-web.mp4" type="video/mp4">
+        </video>
+      </div></div>
+      <div class="paper-info">
+        <div class="papertitle">Multi-Sensor Integration and 3D Scene Perception for Autonomous Platforms</div>
+        <div class="paper-venue">AI &amp; Robotics Lab, IISc · December 2024 – January 2025</div>
+        <p class="paper-desc">Worked on camera relocalization using PoseNet and D2S, LiDAR–camera calibration for VLP32 and FLIR sensors, point-cloud processing and ICP registration, and 3D reconstruction using Gaussian Splatting and Instant-NeRF. The CV reports approximately 1.3% camera relocalization error.</p>
+      </div>
+    </article>
 
-    <footer>
-      <p>Last updated November 2026 · Contact details to be added</p>
-    </footer>
-  </main>
+    <article class="paper">
+      <div class="paper-media"><div class="thumb"><img src="assets/images/critical-agent-results.png" alt="Critical-agent ranking and evaluation results"></div></div>
+      <div class="paper-info">
+        <div class="papertitle">Critical-Agent Identification in Aerial Swarms</div>
+        <div class="paper-venue">Graph learning · Edge-aware attention · Temporal modelling · 2026</div>
+        <p class="paper-desc">Designed a graph-learning pipeline for identifying agents critical to swarm resilience under changing swarm sizes, obstacles, and attrition. The model combines GraphSAGE, edge-aware attention, global context fusion, and a per-agent GRU. Reported results include 97.54% F1, 99.50% PR-AUC, 99.66% ROC-AUC, and approximately 0.82 R² for score and future-score regression.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-media"><div class="thumb text-thumb">DIFFUSION<br>POLICIES</div></div>
+      <div class="paper-info">
+        <div class="papertitle">Edge-Efficient Motion Planning with Diffusion Policies</div>
+        <div class="paper-venue">Conditional trajectory generation · September – December 2025</div>
+        <p class="paper-desc">Architected a conditional 1D U-Net diffusion model with scene encoders and reverse-diffusion error correction for obstacle-aware trajectory generation. Generated more than 3,000 cuMotion trajectories across randomized obstacle placements and evaluated against Transformer and MLP baselines.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-media"><div class="thumb text-thumb">AUTONOMOUS<br>LANDING</div></div>
+      <div class="paper-info">
+        <div class="papertitle">Autonomous Ship Landing using Perception-Based Relative Localization</div>
+        <div class="paper-venue">Aerial robotics · March 2025 – Present</div>
+        <p class="paper-desc">Developed ship-relative odometry using ICP/FPFH registration and adaptive pose covariance for EKF sensor fusion, enabling GPS- and fiducial-independent landing on a dynamic vessel. Achieved approximately 0.7 m average landing accuracy over 200+ trials, with less than 1.3 m error above 4 m altitude.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-media"><div class="thumb text-thumb">MULTI-ROBOT<br>ALLOCATION</div></div>
+      <div class="paper-info">
+        <div class="papertitle">Autonomous Warehouse Task Allocation</div>
+        <div class="paper-venue">Inter-IIT Tech Meet 2025 · BharatForge</div>
+        <p class="paper-desc">Applied TD3 for dynamic task allocation and multi-robot execution, achieving approximately 84% task success over 100 runs in Gazebo simulations scaling to 50 TurtleBots with multi-robot SLAM.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-media"><div class="thumb text-thumb">UNDERWATER<br>IMAGING</div></div>
+      <div class="paper-info">
+        <div class="papertitle">Real-Time Enhanced Super-Resolution for Underwater Imagery</div>
+        <div class="paper-venue">OE5510 course project</div>
+        <p class="paper-desc">Trained an ESR-GAN with a U-Net pre-enhancement stage for 4× underwater image super-resolution. Distilled the teacher into an autoencoder-based student with 0.02× the parameters and 0.064× the latency, retaining approximately 97% accuracy.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-media"><div class="thumb text-thumb">LANGUAGE<br>REASONING</div></div>
+      <div class="paper-info">
+        <div class="papertitle">Sarcasm Detection and Reasoning</div>
+        <div class="paper-venue">HS5652 course project</div>
+        <p class="paper-desc">Fine-tuned Llama 3.1 8B using a three-stage learning scheme for sarcasm detection and sentiment reasoning, obtaining 88% accuracy, and compared against single-stage fine-tuning and a DistilRoBERTa baseline.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section-header"><h2>Research &amp; industry experience</h2></section>
+  <section class="text-list">
+    <article>
+      <h3>AI Controls Intern — Autosky Aerospace <span>March – May 2026</span></h3>
+      <p>Built a 3-DOF / 7-state reusable launch vehicle re-entry environment; benchmarked PPO, TD3, DDPG, and DDPG-LSTM under heat-rate, dynamic-pressure, and g-load constraints. Achieved controlled descent from 15 km to approximately 1.78 m.</p>
+    </article>
+    <article>
+      <h3>Robotics Intern — TCS Research <span>May – July 2025</span></h3>
+      <p>Deployed NVIDIA Isaac ROS cuMotion on a UR5 and measured approximately 10× faster planning than MoveIt2 RRTConnect on real hardware. Implemented resolved-rate, manipulability-maximizing, and Cartesian controllers with MoveIt2 Servo, Hybrid Planning for dynamic obstacle avoidance, and a Podman-containerized multi-pipeline framework.</p>
+    </article>
+    <article>
+      <h3>Robotic Perception Intern — AI &amp; Robotics Lab, IISc <span>December 2024 – January 2025</span></h3>
+      <p>Worked on PoseNet/D2S camera relocalization, VLP32–FLIR LiDAR-camera calibration, point-cloud processing, ICP registration, and 3D scene reconstruction using Gaussian Splatting and Instant-NeRF.</p>
+    </article>
+  </section>
+
+  <section class="section-header"><h2>Leadership &amp; service</h2></section>
+  <section class="text-list">
+    <article>
+      <h3>Team Anveshak — Space Robotics Team, CFI IIT Madras <span>April 2023 – May 2026</span></h3>
+      <p>Progressed from Software Engineer to Head of Operations and Team Lead, leading a 63-member multidisciplinary team. Competition results included first place at Caterpillar Autonomy Challenge 2025, sixth worldwide at Anatolian Rover Challenge, qualification for NASA Lunabotics 2026, third at IRC, fourth at ISDC, and second at Caterpillar Autonomy Challenge 2026. Also served as Teaching Assistant for Introduction to Robotics (ID6040), conducting CoppeliaSim practical sessions on arm kinematics and sim-to-real transfer.</p>
+    </article>
+  </section>
+
+  <section class="section-header"><h2>Technical skills</h2></section>
+  <section class="skills">
+    <p><strong>Robot learning:</strong> Imitation learning, SmolVLA fine-tuning, diffusion policies (DDPM), reinforcement learning (PPO, TD3, DDPG, DQN), policy evaluation, dataset generation.</p>
+    <p><strong>ML and data:</strong> PyTorch, LeRobot, Hugging Face Transformers, TensorFlow, OpenCV, TensorRT, knowledge distillation, LLM fine-tuning.</p>
+    <p><strong>Robotics:</strong> ROS/ROS 2, MoveIt 2, cuMotion, MuJoCo, NVIDIA Isaac Sim, Gazebo, CARLA, Jetson, real-robot evaluation.</p>
+    <p><strong>Languages and tools:</strong> Python, C/C++, MATLAB, Git, Docker/Podman, Fusion 360.</p>
+  </section>
+
+  <footer>Last updated November 2026 · <a href="CV.pdf">Download CV</a> · <a href="https://github.com/Redsapphire15">GitHub</a></footer>
+</main>
 </body>
 </html>
