@@ -73,3 +73,17 @@ footer { margin-top: 45px; padding-top: 12px; border-top: 1px solid var(--line);
   .project-figure { min-height: 160px; }
   .entry { grid-template-columns: 1fr; gap: 3px; }
 }
+
+/* Embedded research media */
+.publications { padding-left: 22px; }
+.publications li { margin: 8px 0; }
+.media-figure { background: #f4f6f8; padding: 5px; }
+.media-figure img { display: block; width: 100%; height: 100%; max-height: 190px; object-fit: contain; }
+.project-media { margin-top: 13px; }
+.project-media video { display: block; width: 100%; max-height: 360px; background: #111; border-radius: 3px; }
+.media-caption { margin: 5px 0 0 !important; color: var(--muted); font: 12px/1.45 Arial, sans-serif; }
+.experience-video { max-width: 280px; }
+@media (max-width: 680px) {
+  .media-figure img { max-height: 230px; }
+  .experience-video { max-width: 100%; }
+}
