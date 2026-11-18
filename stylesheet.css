@@ -1,89 +1,45 @@
-:root {
-  --ink: #222;
-  --muted: #666;
-  --line: #e7e7e7;
-  --link: #245b91;
-  --paper: #fff;
-  --wash: #f4f6f8;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font: 16px/1.65 Georgia, "Times New Roman", serif;
-  -webkit-font-smoothing: antialiased;
-}
-a { color: var(--link); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.page { max-width: 940px; margin: 48px auto 70px; padding: 0 30px; }
-.intro { display: grid; grid-template-columns: minmax(0, 1fr) 190px; gap: 42px; align-items: start; }
-h1 { margin: 0 0 5px; font-size: 2.15rem; font-weight: 500; line-height: 1.2; letter-spacing: -.035em; }
-.subtitle { margin: 0 0 20px; color: var(--muted); font: 15px/1.5 Arial, sans-serif; }
-.intro-copy p { margin: 0 0 13px; }
-.portrait { padding-top: 8px; }
-.portrait img { width: 100%; display: block; border-radius: 3px; }
-.links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 18px; font: 14px Arial, sans-serif; }
-section { margin-top: 38px; }
-h2 { margin: 0 0 15px; padding-bottom: 7px; border-bottom: 1px solid var(--line); font-size: 1.35rem; font-weight: 500; }
-h3 { margin: 0 0 3px; font-size: 1.08rem; font-weight: 600; line-height: 1.35; }
-.section-note, .meta { color: var(--muted); font: 13px/1.5 Arial, sans-serif; }
-.section-note { margin: -4px 0 18px; }
-.project { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 25px; padding: 19px 0; border-bottom: 1px solid var(--line); }
-.project:first-of-type { padding-top: 4px; }
-.project-figure { position: relative; min-height: 145px; overflow: hidden; background: var(--wash); border: 1px solid #e9edf0; border-radius: 3px; display: flex; align-items: center; justify-content: center; }
-.figure-label { position: absolute; bottom: 7px; left: 10px; right: 10px; color: #66717b; font: 10px Arial, sans-serif; text-align: center; letter-spacing: .04em; }
-.project-copy p { margin: 8px 0 0; }
-.project-copy .meta { margin-top: 2px; }
-.project-links { color: var(--muted); font: 12px Arial, sans-serif; }
-.arm { position: absolute; top: 54px; width: 72px; height: 9px; border-radius: 8px; background: #64839b; }
-.arm-left { left: 24px; transform: rotate(30deg); }
-.arm-right { right: 24px; transform: rotate(-30deg); }
-.object { width: 25px; height: 25px; background: #d5a45c; border-radius: 4px; z-index: 1; }
-.pipeline { display: flex; align-items: center; gap: 7px; color: #385c78; font: 11px Arial, sans-serif; }
-.pipeline span { padding: 8px 7px; border: 1px solid #cbd7e0; border-radius: 3px; background: #fff; }
-.pipeline b { color: #9aa8b3; }
-.figure-drone { background: linear-gradient(#edf3f7 0 62%, #dce6eb 62%); }
-.horizon { position: absolute; top: 62%; width: 100%; border-top: 2px solid #9bb4c1; }
-.ship { position: absolute; bottom: 32px; width: 120px; height: 19px; background: #607d8b; clip-path: polygon(0 0,100% 0,85% 100%,15% 100%); }
-.drone { position: absolute; top: 32px; left: 48%; color: #3e627d; font-size: 25px; }
-.figure-swarm svg, .figure-diffusion svg { width: 100%; height: 100%; padding: 10px; }
-.edges path { fill: none; stroke: #aab9c5; stroke-width: 2; }
-.nodes circle { fill: #6689a4; stroke: white; stroke-width: 2; }
-.figure-diffusion svg path { fill: none; stroke: #7897ac; stroke-width: 2.5; }
-.figure-diffusion svg path:nth-child(2) { stroke-dasharray: 4 3; }
-.figure-diffusion svg path:nth-child(3) { stroke: #b18c62; }
-.figure-diffusion svg path:nth-child(4) { stroke: #9aa9b2; }
-.figure-diffusion svg circle { fill: #4e718b; }
-.figure-multi { background-color: #f4f6f8; }
-.warehouse-grid { position: absolute; inset: 12px 20px 28px; background-image: linear-gradient(#dce3e8 1px, transparent 1px), linear-gradient(90deg,#dce3e8 1px,transparent 1px); background-size: 28px 24px; }
-.bot { position: absolute; width: 17px; height: 17px; border-radius: 4px; background: #6e8da4; border: 2px solid #fff; }
-.bot-a { top: 38px; left: 45px; }.bot-b { top: 75px; right: 50px; background: #b18c62; }.bot-c { bottom: 38px; left: 105px; background: #7f9b85; }
-.entry { display: grid; grid-template-columns: 245px minmax(0,1fr); gap: 24px; padding: 11px 0; }
-.entry p { margin: 0; }
-.entry .meta { margin: 3px 0 0; }
-footer { margin-top: 45px; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font: 12px Arial, sans-serif; }
-@media (max-width: 680px) {
-  .page { margin: 28px auto 45px; padding: 0 20px; }
-  .intro { grid-template-columns: 1fr; gap: 18px; }
-  .portrait { grid-row: 1; width: 112px; }
-  h1 { font-size: 1.8rem; }
-  .project { grid-template-columns: 1fr; gap: 12px; }
-  .project-figure { min-height: 160px; }
-  .entry { grid-template-columns: 1fr; gap: 3px; }
-}
-
-/* Embedded research media */
-.publications { padding-left: 22px; }
-.publications li { margin: 8px 0; }
-.media-figure { background: #f4f6f8; padding: 5px; }
-.media-figure img { display: block; width: 100%; height: 100%; max-height: 190px; object-fit: contain; }
-.project-media { margin-top: 13px; }
-.project-media video { display: block; width: 100%; max-height: 360px; background: #111; border-radius: 3px; }
-.media-caption { margin: 5px 0 0 !important; color: var(--muted); font: 12px/1.45 Arial, sans-serif; }
-.experience-video { max-width: 280px; }
-@media (max-width: 680px) {
-  .media-figure img { max-height: 230px; }
-  .experience-video { max-width: 100%; }
+/* Layout adapted from the classic Jon Barron academic homepage structure. */
+:root { --link:#1772d0; --ink:#222; --muted:#555; --line:#e8e8e8; --highlight:#ffffd0; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:#fff; color:var(--ink); font-family:Lato, Verdana, Helvetica, sans-serif; font-size:14px; line-height:1.55; }
+a { color:var(--link); text-decoration:none; }
+a:hover { color:#f09228; text-decoration:underline; }
+.page { max-width:900px; margin:36px auto 60px; padding:0 24px; }
+.bio { display:grid; grid-template-columns:minmax(0,1fr) 180px; gap:34px; align-items:start; margin-bottom:34px; }
+h1 { margin:0 0 10px; font-size:31px; line-height:1.2; font-weight:400; letter-spacing:-.5px; }
+.affiliation { color:var(--muted); margin-top:-4px; }
+.bio p { margin:9px 0; }
+.bio-links { margin-top:15px!important; }
+.bio-photo img { display:block; width:100%; aspect-ratio:1; object-fit:cover; border-radius:2px; }
+.section-header { margin:27px 0 8px; }
+h2 { margin:0 0 8px; font-size:21px; font-weight:400; }
+.section-header p { margin:0 0 10px; }
+.papers { margin:0; }
+.paper { display:grid; grid-template-columns:172px minmax(0,1fr); gap:18px; padding:12px 8px; margin:0 -8px; border-radius:3px; }
+.paper.highlighted { background:var(--highlight); }
+.paper-media { width:160px; }
+.thumb { width:160px; height:120px; background:#f2f4f6; display:flex; align-items:center; justify-content:center; overflow:hidden; border-radius:2px; }
+.thumb img { display:block; width:100%; height:100%; object-fit:contain; }
+.thumb video { width:100%; height:100%; object-fit:contain; background:#111; }
+.text-thumb { color:#49657b; font-size:13px; font-weight:700; letter-spacing:1px; text-align:center; line-height:1.6; }
+.papertitle { font-size:15px; font-weight:700; line-height:1.4; }
+.paper-authors { margin-top:3px; }
+.paper-venue { margin-top:2px; color:#444; }
+.paper-desc { margin:6px 0 0; }
+.text-list article { padding:9px 0 10px; border-bottom:1px solid var(--line); }
+h3 { font-size:14px; margin:0 0 4px; font-weight:700; }
+h3 span { float:right; font-size:13px; font-weight:400; color:var(--muted); }
+.text-list p,.skills p { margin:3px 0; }
+.skills { margin-top:8px; }
+footer { border-top:1px solid var(--line); margin-top:34px; padding-top:12px; color:var(--muted); font-size:12px; }
+@media(max-width:650px) {
+ .page { margin:24px auto 40px; padding:0 16px; }
+ .bio { grid-template-columns:1fr; gap:14px; }
+ .bio-photo { grid-row:1; width:116px; }
+ h1 { font-size:27px; }
+ .paper { grid-template-columns:1fr; gap:9px; }
+ .paper-media { width:100%; }
+ .thumb { width:min(100%,320px); height:180px; }
+ h3 span { display:block; float:none; }
 }
